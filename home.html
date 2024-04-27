@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Click Game</title>
+    <style>
+        #boundary {
+            position: relative;
+            width: 300px;
+            height: 300px;
+            border: 2px solid #333;
+            overflow: hidden;
+        }
+
+        #block {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            background-color: #3498db;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <h1>W   elcome to Click Game</h1>
+    </center>
+    
+    <h3>Description:</h3>
+    <ul>
+        <li>You will be having 60 seconds.</li>
+        <li>Within the time, you have to click the block.</li>
+        <li>Every time you click the block, the score increases.</li>
+        <li>The highest scorer wins.</li>
+    </ul>
+    <center>
+    <div id="boundary">
+        <div id="block"></div>
+    </div>
+    <h2>  
+    <b><div id="score">Score: 0</div>
+    <div id="timer">Time: 60</div></b>
+    </h2>
+    </center>
+    <script src="script.js"></script>
+</body>
+
+</html>
